@@ -1,0 +1,39 @@
+
+  .why, .how {
+
+    &__container {
+      //display: flex;
+      //justify-content: center;
+      //align-items: center;
+      //padding: 25px;
+
+    h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 30px;
+      font-family: $font-noto;
+      font-size: 50px;
+      text-transform: uppercase;
+      text-decoration-line: underline;
+      text-decoration-color: lightblue;
+      }
+
+      .box {
+        margin: 0 auto;
+        width: 70%;
+        height: 70%;
+
+        p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          line-height: 2rem;
+          //padding: 0px 30px;
+          font-family: $font-open;
+          margin-bottom: 150px;
+        }
+      }
+  }
+}

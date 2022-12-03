@@ -1,0 +1,63 @@
+@import './src/styles/settings/reset';
+@import './src/styles/settings/_fonts.scss';
+@import './src/styles/settings/_colors.scss';
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-open;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+ // font-size: 50px;
+}
+
+.nav{
+  li {
+    list-style-type: none;
+    color: $black;
+    font-size: 50px;
+  }
+}
+
+  .container {
+    width: 1352px;
+    margin: 0 auto;
+  }
+
+  button {
+    padding: 10px 10px;
+    border: none;
+    background: none;
+   // font-family: $font-noto;
+  }
+  Link {
+  text-decoration: none;
+    color: $black;
+  }
+
+  h1, h2 {
+    color: $black;
+  }
+
+  h1 {
+    font-family: $font-noto;
+    font-size: 70px;
+  }
+
+  h2 {
+    font-family: $font-open;
+    font-size: 80px;
+    letter-spacing: 0.1875rem;
+  }
+
+
+
+
+

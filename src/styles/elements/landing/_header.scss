@@ -1,0 +1,89 @@
+.header {
+   height: 80px;
+  // box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .logo {
+    text-transform: uppercase;   //DODAJ IKONE JAKAS
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: $font-open;
+    font-size: 20px;
+    color: $black;
+  }
+
+  .nav {
+   // flex-direction: row;
+
+    &__element {
+      padding: 0 30px;
+      display: inline-block;
+      font-family: $font-open;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    &__link {
+      color: $black;
+      font-weight: 600;
+      font-size: 20px;
+      text-transform: uppercase;
+      padding: 20px 18px 22px;
+      border-bottom: 4px solid transparent;
+      letter-spacing: 0.1875rem;
+
+      &:hover {
+        color: $grey-light;
+        border-color: $grey-light;
+      }
+    }
+
+    &__nav {
+      display: flex;
+
+      //@include mobile {
+      //  position: absolute;
+      //  left: 0;
+      //  top: 95px;
+      //  flex-direction: column;
+      //  background-color: white;
+      //  width: 100%;
+      //  padding-bottom: 20px;
+      //  display: none;
+      //
+      .nav__element {
+        padding: 0;
+      }
+
+      .nav__link {
+        display: block;
+        padding: 14px 20px;
+      }
+    }
+  }
+      .btn_nav {   // DODAJ IKONE STRZALKE
+        color: $black;
+        font-weight: 300;
+        font-size: 20px;
+       // text-transform: uppercase;
+       // padding: 25px 250px 22px 30px;
+        margin-right: 40px;
+        border-bottom: 4px solid transparent;
+
+        &:hover {
+          color: $grey-light;
+          border-color: $grey-light;
+        }
+
+
+       }
+      }
