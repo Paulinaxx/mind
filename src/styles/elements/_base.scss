@@ -1,6 +1,7 @@
 @import './src/styles/settings/reset';
 @import './src/styles/settings/_fonts.scss';
 @import './src/styles/settings/_colors.scss';
+@import 'primeicons/primeicons.css';
 
 
 * {
@@ -15,6 +16,8 @@ body {
 a {
   text-decoration: none;
   font-weight: bold;
+  color: $black;
+
  // font-size: 50px;
 }
 

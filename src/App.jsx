@@ -1,6 +1,5 @@
 
 import React, {Component} from "react";
-import {createRoot} from "react-dom/client";
 import {BrowserRouter as Router, Routes, Route, Link, NavLink, Outlet, BrowserRouter} from 'react-router-dom';
 
 
@@ -17,6 +16,13 @@ import Footer from "./views/Footer.jsx";
 
 import Login from "./views/Login.jsx";
 import Register from "./views/Register.jsx";
+
+//DASHBOARD AFTER LOG IN
+import Dashboard from "./components/Dashboard.jsx"
+import Navbar_logout from "./components/dashboard/Navbar_logout.jsx"
+import Welcome from "./components/dashboard/Welcome.jsx"
+import Add_subscription from "./components/dashboard/Add_subscription.jsx"
+import Your_subscriptions from "./components/dashboard/Your_subscriptions.jsx"
 
 
 
@@ -35,6 +41,13 @@ export default function App() {
               <Route path="/Login" element={<Login />}/>
               <Route path="/Register" element={<Register />}/>
 
+              {/*<Route path="/dashboard" />*/}
+              <Route path="dashboard" element={<Dashboard />}>
+              <Route path="/navbar_logout" element={<Navbar_logout />}/>
+              <Route path="/welcome" element={<Welcome />}/>
+              <Route path="/Add_subscription" element={<Add_subscription />}/>
+              <Route path="/Your_subscriptions" element={<Your_subscriptions />}/>
+              </Route>
           </Routes>
       </Router>
   );

@@ -1,3 +1,5 @@
+import 'primeicons/primeicons.css';
+
 export default function Footer() {
     return(
 
@@ -8,8 +10,10 @@ export default function Footer() {
                     <span className="footer__copy">© 2022 MIND, All Rights Reserved</span>
                 </div>
                 <div className="footer__icons">
-                    <a href="src/views/Footer.jsx#"><img src="/images/Twitter.svg" alt="twitter"/></a>
-                    <a href="src/views/Footer.jsx#"><img src="/images/Facebook.svg" alt="facebook"/></a>
+                    <i className="pi-facebook" style={{'fontSize': '1em'}}></i>
+                    <i className="pi-twitter" style={{'fontSize': '1em'}}></i>
+                    <i className="pi-youtube" style={{'fontSize': '1em'}}></i>
+                    <i className="pi-instagram" style={{'fontSize': '1em'}}></i>
                 </div>
             </div>
         </footer>

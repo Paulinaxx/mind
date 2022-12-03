@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-
+import 'primeicons/primeicons.css';
 
 import Navbar_main from "./main/Navbar_main.jsx";
 import Main_welcome_section from "./main/Main_welcome_section.jsx";
