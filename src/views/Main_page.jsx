@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import 'primeicons/primeicons.css';
+
 
 import Navbar_main from "./main/Navbar_main.jsx";
 import Main_welcome_section from "./main/Main_welcome_section.jsx";
@@ -13,15 +13,11 @@ export default function Main_page() {
     return(
         <div>
              <Navbar_main />
-            <Outlet />
              <Main_welcome_section />
-            <Outlet />
              <Main_why_how_section />
-            <Outlet />
              <Main_CTA />
             <Outlet />
-            <Footer />
-            <Outlet />
+
         </div>
     );
 }

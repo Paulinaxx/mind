@@ -9,6 +9,10 @@
     .img_section {
       max-width: 50%;
 
+      img {
+        width: 50%;
+      }
+
       .chilling {
         width: 70%;
         height: 70%;
@@ -33,13 +37,15 @@
     }
 
     .big-btn {
-
-      margin-top: 100px;
+     // margin-top: 100px;
       display: flex;
-      align-items: center;
+      align-items:center;
       justify-content: center;
+     // margin: 15px;
+    //  flex-direction: row;
       width: 70%;
       height: 70%;
+
       @-webkit-keyframes "move-1" {
         0% {
           transform: translate(0, 0);

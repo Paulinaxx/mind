@@ -13,11 +13,8 @@ export default function Main_Dashboard() {
     return(
         <div>
             <Navbar_logout />
-            <Outlet />
             <Welcome />
-            <Outlet />
             <AddSubscription />
-            <Outlet />
             <YourSubscriptions />
             <Outlet />
         </div>

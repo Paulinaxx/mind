@@ -1,10 +1,18 @@
 @import './src/styles/elements/_base.scss';
 
 
+//main page
 @import './src/styles/elements/landing/_header.scss';
 @import './src/styles/elements/landing/_landing_welcome_section.scss';
 @import './src/styles/elements/landing/_landing_why_how_sections.scss';
-@import 'styles/elements/landing/main_CTA';
+@import './src/styles/elements/landing/_main_CTA';
+
+//login/register page
+@import './styles/elements/login_register';
+
+//dashboard page
+@import './styles/elements/dashboard/_navbar_logout.scss';
+@import './styles/elements/dashboard/_welcome.scss';
 
 
 @import './src/styles/elements/_footer.scss';

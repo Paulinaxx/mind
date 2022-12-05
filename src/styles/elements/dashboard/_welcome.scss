@@ -1,0 +1,23 @@
+
+.content{
+  &__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
+
+
+    .img_section {
+      margin-top: 50px;
+      max-width: 50%;
+
+      .women-showing {
+        width: 50%;
+        height: 50%;
+
+      }
+    }
+  }
+}

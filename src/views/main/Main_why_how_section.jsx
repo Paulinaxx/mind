@@ -1,3 +1,4 @@
+
 export default function Main_why_how_section() {
 
     return (

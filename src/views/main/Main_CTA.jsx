@@ -1,6 +1,7 @@
-import { Outlet } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Main_CTA () {
+    const navigate = useNavigate();
     return(
         <section className="CTA__container">
                 <p>
@@ -26,7 +27,7 @@ export default function Main_CTA () {
                     </defs>
                 </svg>
 
-                <button id="gooey-button">
+                <button id="gooey-button" onClick={() => navigate("/login")}>
                     TRY ME
                     <span className="bubbles">
                         <span className="bubble"></span>
@@ -42,7 +43,6 @@ export default function Main_CTA () {
                         </span>
                 </button>
             </div>
-            {/*<Outlet />*/}
         </section>
 
     );

@@ -1,7 +1,7 @@
 @import './src/styles/settings/reset';
 @import './src/styles/settings/_fonts.scss';
 @import './src/styles/settings/_colors.scss';
-@import 'primeicons/primeicons.css';
+
 
 
 * {
@@ -30,8 +30,9 @@ a {
 }
 
   .container {
-    width: 1352px;
+    width: 90vw;
     margin: 0 auto;
+
   }
 
   button {

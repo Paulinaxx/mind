@@ -1,12 +1,17 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Main_welcome_section() {
+    const navigate = useNavigate();
 
     return(
-        <>
         <main className="content__container">
             <div className="img_section">
-                <img className= "chilling" src="./src/styles/img/chilling.jpg" alt="man with coffe"/>
+                <img className= "chilling"
+                     src="./src/styles/img/chilling.jpg"
+                     alt="man with coffe"
+                />
             </div>
-            <div clssName="welcome_section">
+            <div className="welcome_section">
                 <h1>It's easy to manage Your subscriptions.</h1>
 
                 <div className="big-btn">
@@ -29,7 +34,7 @@ export default function Main_welcome_section() {
                         </defs>
                     </svg>
 
-                    <button id="gooey-button">
+                    <button id="gooey-button" onClick={() => navigate("/login")}>
                         try me
                         <span className="bubbles">
                         <span className="bubble"></span>
@@ -47,6 +52,5 @@ export default function Main_welcome_section() {
                 </div>
             </div>
         </main>
-        </>
     );
 }
