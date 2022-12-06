@@ -8,7 +8,7 @@ export default function Welcome() {
                  alt="women"
                 />
             </div>
-            <h2>Hello, You!</h2>
+            <h1>Hello, You!</h1>
         </div>
     )
 }

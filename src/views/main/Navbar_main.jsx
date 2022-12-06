@@ -2,10 +2,19 @@ import 'primeicons/primeicons.css';
 import {Link} from "react-router-dom";
 
 import {useNavigate} from 'react-router-dom'
+import { useRef } from 'react';
 
 export default function Navbar_main() {
     const navigate = useNavigate();
 
+const why = useRef(null);
+
+const scrollToSection = (elementRef) => {
+    window.scrollTo({
+        top: elementRef.current.offsetTop,
+        behavior: "smooth",
+    })
+}
     return(
         <header className='header'>
             <div className='header__container'>
@@ -28,6 +37,10 @@ export default function Navbar_main() {
         </header>
 );
 }
+
 //const navigate = useNavigate();
 //button could be <button className="btn_nav btn_signin/register" onClick={() => navigate("/login")}> SignIn/Register </button>
-// <button className="btn_nav btn_signin/register"><Link to="/login"><i className="pi-sun" style={{'fontSize': '1em'}}></i>Register/ Sign In</Link></button>
+//
+
+//
+//onClick={() => scrollToSection(why)}
