@@ -3,8 +3,8 @@ export default function Main_why_how_section() {
 
     return (
         <>
-            <section>
-            <div className="why__container">
+            <section className="container">
+            <div className="why">
                 <h2>Why?</h2>
                 <div className="box">
                     <p>
@@ -14,8 +14,8 @@ export default function Main_why_how_section() {
             </div>
             </section>
 
-            <section>
-            <div className="how__container">
+            <section className="container">
+            <div className="how">
                 <h2>How?</h2>
                 <div className="box">
                     <p>

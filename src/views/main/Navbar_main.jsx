@@ -19,10 +19,10 @@ const scrollToSection = (elementRef) => {
         <header className='header'>
             <div className='header__container'>
 
-            <div className="logo">
-                <i className="pi pi-cloud" style={{'fontSize': '1em'}}></i>
-                <a href="/">Mind</a>
-            </div>
+                <div className="logo">
+                    <i className="pi pi-cloud" style={{'fontSize': '1em'}}></i>
+                    <a href="/">Mind</a>
+                </div>
                  <nav>
                      <ul className="nav">
                          <li className="nav__element"><a href="/landing_why_how_section" className="nav__link">WHY?</a></li>
@@ -38,9 +38,6 @@ const scrollToSection = (elementRef) => {
 );
 }
 
-//const navigate = useNavigate();
-//button could be <button className="btn_nav btn_signin/register" onClick={() => navigate("/login")}> SignIn/Register </button>
-//
-
+//TO DO: click handlers to sections why and how
 //
 //onClick={() => scrollToSection(why)}

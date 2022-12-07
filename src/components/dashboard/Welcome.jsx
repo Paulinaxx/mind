@@ -1,10 +1,10 @@
-
+import women from "/src/styles/img/women.jpg"
 export default function Welcome() {
     return(
         <div className="content__container">
             <div className="img_section">
                 <img className= "women-showing"
-                 src="./src/styles/img/women.jpg"
+                 src={women}
                  alt="women"
                 />
             </div>

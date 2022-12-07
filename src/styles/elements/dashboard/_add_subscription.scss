@@ -1,6 +1,6 @@
 .container{
   .add_sub{
-    background-color: grey;
+    //background-color: grey;
     //display: flex;
     //justify-content: center;
     //align-items: center;
@@ -25,11 +25,11 @@
       padding: 7px 12px;
       margin: 13px 13px;
       outline: 0;
-      border-width: 0 0 1.5px;
+      border-width: 0 0 2px;
       border-color: $grey-light;
 
       input:focus {
-        border-color: green
+       // border-color: green
       }
     }
     button {

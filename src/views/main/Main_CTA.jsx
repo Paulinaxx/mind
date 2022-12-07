@@ -2,11 +2,14 @@ import { useNavigate } from "react-router-dom";
 
 export default function Main_CTA () {
     const navigate = useNavigate();
+
     return(
-        <section className="CTA__container">
+        <section className="container">
+            <div className="CTA">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tristique porta feugiat. Quisque aliquet justo ligula, eget egestas dolor eleifend vitae. Sed ac rutrum justo, non fringilla lectus. Pellentesque rutrum lobortis eros, id tempus lorem vulputate sollicitudin. Donec scelerisque dictum elit at vehicula. Aliquam dapibus ligula eu mi facilisis imperdiet. Aenean pretium massa at mauris aliquam, eget venenatis dolor feugiat.
                 </p>
+
             <div className="big-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                     <defs>
@@ -43,8 +46,8 @@ export default function Main_CTA () {
                         </span>
                 </button>
             </div>
+            </div>
         </section>
-
     );
 }
 
