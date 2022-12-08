@@ -8,7 +8,10 @@
 @import './src/styles/elements/landing/_main_CTA';
 
 //login/register page
-@import './styles/elements/login_register';
+@import 'styles/elements/_navbar_empty.scss';
+@import './styles/elements/_login.scss';
+@import './styles/elements/_register.scss';
+
 
 //dashboard page
 @import './styles/elements/dashboard/_navbar_logout.scss';

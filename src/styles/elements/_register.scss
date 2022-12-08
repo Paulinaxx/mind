@@ -1,0 +1,54 @@
+@import '../settings/_colors.scss';
+
+.register{
+  .container {
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .img_section {
+      max-width: 50%;
+      border-right: 3px solid $light-blue;
+
+      img {
+        width: 60%;
+      }
+    }
+
+    .register-section {
+      text-align: center;
+
+      .register-form {
+        h1{
+          padding: 20px;
+        }
+        span {
+          margin: 8px 8px;
+
+        }
+
+        .p-button-raised{
+          // width: 50%;
+          text-align: center;
+          font-family: $font-open;
+          // padding: 15px;
+
+          &:last-of-type {
+            margin-top:20px
+          }
+          &:hover{
+            text-decoration-line: underline;
+            text-decoration-color: $black;
+          }
+        }
+        .p-button-text{
+          margin-left: -40px;
+        }
+      }
+    }
+
+  }
+}
