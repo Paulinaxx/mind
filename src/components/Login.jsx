@@ -25,7 +25,7 @@ export default function Login() {
         });
 
         if (!error) {
-            //Toast with error message
+            errorToast.current.show({severity: 'error', summary: 'Error', detail: 'Error. Please try again.'})
         }
         localStorage.setItem('userData', JSON.stringify(user));
         navigate('/Dashboard')

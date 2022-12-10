@@ -3,9 +3,18 @@ import {useEffect} from "react";
 import 'primeicons/primeicons.css';
 import Your_subscriptions from "./Your_subscriptions.jsx";
 
+
+
+const initialValues = {
+    name: "",
+    username: "",
+    password: "",
+    dates: "",
+    sum: "",
+ };
+
 export default function Add_subscription() {
 
-    const [list, setList] = useState([]); //list of subscriptions
 
     const [name, setName] = useState("");
     const [username, setUsername] = useState("");
@@ -13,30 +22,29 @@ export default function Add_subscription() {
     const [dates, setDates] = useState("");
     const [sum, setSum] = useState("");
 
+    const [list, setList] = useState([]); //list of subscriptions
 
-    const [inputs, setInputs] = useState({})
+    const [inputs, setInputs] = useState(initialValues);
 
-
-    const handleChange = (e) => {
-        const name = e.target.name;
-        const value = e.target.value;
-        setInputs(values => ({...values, [name]: value}))
-    }
-    //dodawanie elem do tablicy z subami??
-    const handleAddSub = (e) =>{
+    const handleInputChange = (e) => {
         e.preventDefault();
-        console.log(inputs);                                                //tutaj dodac elem do listy??
-        }
+
+        const { name, value } = e.target;
+        setInputs({
+            ...inputs,
+            [name]: value,
+        });
+    };
+
+    const handleAddSub = (e) => {
+        e.preventDefault();
+
+        console.log(inputs)
+    }
+
+    //upgrade list of subs?
 
 
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     // if (!name || !username || !password || !dates || !sum) {
-    //     //     throw new Error("fill data!")
-    //     // } else {
-    //     //     setList([...list, inputs]);
-    //     // }
-    // }
 
     return(
             <div className="container">
@@ -45,47 +53,46 @@ export default function Add_subscription() {
 
             <div className="form_content">
 
-            <form onSubmit={handleAddSub} className="form-box">
+            <form className="form-box">
                 <input type="text"
                        name="name"
                        placeholder="Name of the platform"
-                       value={inputs.name || ""}
-                       onChange={handleChange}/>
+                       value={inputs.name}
+                       onChange={handleInputChange}/>
 
                 <input type="text"
                        name="username"
                        placeholder="Username for the platform"
-                       value={inputs.username || ""}
-                       onChange={handleChange}/>
+                       value={inputs.username}
+                       onChange={handleInputChange}/>
 
                 <input type="text"
                        name="password"
                        placeholder="Password for the platform"
-                       value={inputs.password || ""}
-                       onChange={handleChange}/>
+                       value={inputs.password}
+                       onChange={handleInputChange}/>
 
                 <input type="text"
                        name="dates"
                        placeholder="When subscription expires?"
-                       value={inputs.dates || ""}
-                       onChange={handleChange}/>
+                       value={inputs.dates}
+                       onChange={handleInputChange}/>
 
                 <input type="number"
                        name="sum"
                        placeholder="How much do you pay?"
-                       value={inputs.sum || ""}
-                       onChange={handleChange}/>
+                       value={inputs.sum}
+                       onChange={handleInputChange}/>
 
             </form>
 
-                <button type="button"
+                <button type="submit"
                         className="btn-add-sub"
-                        onClick={handleAddSub}
+                         onClick={handleAddSub}                //dodaj elem do listy/ tabeli
                 >+</button>
             </div>
          </div>
-                {/*<h1>Your subscriptions:</h1>*/}
-
+                <h1></h1>
     </div>
     )
 }
