@@ -1,3 +1,6 @@
+@import './src/styles/settings/_colors.scss';
+@import './src/styles/settings/_fonts.scss';
+
 .container{
   .add_sub{
     //background-color: grey;
@@ -9,10 +12,11 @@
     h1{
       display: flex;
       justify-content: center;
+      align-items: center;
       font-family: $font-noto;
       size: 5rem;
-      padding: 50px 30px;
-      margin: 70px;
+      padding: 30px 30px;
+      //margin: 70px;
     }
   }
   .form_content{
@@ -21,15 +25,14 @@
     align-items: center;
 
     input {
-
       padding: 7px 12px;
       margin: 13px 13px;
       outline: 0;
       border-width: 0 0 2px;
-      border-color: $grey-light;
+      border-color: $light-blue;
 
       input:focus {
-       // border-color: green
+        // border-color: green
       }
     }
     button {
@@ -41,11 +44,34 @@
       height: 40px;
     }
   }
+  .icons {
+    padding: 10px 10px;
+  }
+
   .your_subs {
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center;
     text-align: center;
 
+
+    ul {
+      .btn-sub{
+        background-color: black;
+        border-radius: 10px;
+        color: $white;
+        margin: 5px;
+      }
+
+      li {
+        display: inline-block;
+        //max-width: 50%;
+        padding: 20px 20px;
+        margin-top: 30px;
+        border-bottom: 2px solid $light-blue;
+        width: 80vw;
+      }
+    }
   }
+
 }
