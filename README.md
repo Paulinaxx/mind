@@ -32,15 +32,15 @@ App for managing Your subscriptions.
 
 ```npm install -save react-router-dom```
 
-et voilà!
+## et voilà!
 
 
 Views
 
-Log In or Rgister
+
 ![screen2-app](https://user-images.githubusercontent.com/62884499/207932852-a77d586f-2607-4e21-90d5-3ffad6edf442.png)
 
 
-Logged in user
+
 ![screen3-app](https://user-images.githubusercontent.com/62884499/207932855-61e6d3b5-7000-42cc-92d5-e7c69afee5bc.png)
 
