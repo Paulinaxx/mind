@@ -134,7 +134,7 @@ export default function Add_subscription() {
             </div>
 
             <h1>Your subscriptions</h1>
-/
+
                 <div className="your_subs">
                     <ul className="all_subs">
                         {list.map((inputs) => (
@@ -158,5 +158,5 @@ export default function Add_subscription() {
         </div>
     )
 }
-//- {inputs.username} - {inputs.password} - {inputs.dates} - {inputs.sum}
+
 
