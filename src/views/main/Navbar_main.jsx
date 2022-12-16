@@ -5,16 +5,18 @@ import {useNavigate} from 'react-router-dom'
 import { useRef } from 'react';
 
 export default function Navbar_main() {
+
     const navigate = useNavigate();
 
-const why = useRef(null);
+    function handleScroll() {
+        const scrollToSection = () => {
+            const element = document.getElementsByClassName('how');
+            if (element) {
+                element.scrollIntoView({ behaviour: 'smooth'});
+            }
+        }
+    }
 
-const scrollToSection = (elementRef) => {
-    window.scrollTo({
-        top: elementRef.current.offsetTop,
-        behavior: "smooth",
-    })
-}
     return(
         <header className='header'>
             <div className='header__container'>
@@ -25,8 +27,8 @@ const scrollToSection = (elementRef) => {
                 </div>
                  <nav>
                      <ul className="nav">
-                         <li className="nav__element"><a href="/landing_why_how_section" className="nav__link">WHY?</a></li>
-                         <li className="nav__element"><a href="/landing_why_how_section" className="nav__link">HOW?</a></li>
+                         <li className="nav__element" ><a href="#" className="nav__link">WHY?</a></li>
+                         <li className="nav__element"><a href="#" className="nav__link">HOW?</a></li>
                       </ul>
                  </nav>
                 <button className="btn_nav btn_signin/register"
