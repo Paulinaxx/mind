@@ -1,21 +1,21 @@
 import 'primeicons/primeicons.css';
-import {Link} from "react-router-dom";
+import { useNavigate } from 'react-router-dom'
 
-import {useNavigate} from 'react-router-dom'
-import { useRef } from 'react';
 
 export default function Navbar_main() {
 
     const navigate = useNavigate();
 
-    function handleScroll() {
-        const scrollToSection = () => {
-            const element = document.getElementsByClassName('how');
-            if (element) {
-                element.scrollIntoView({ behaviour: 'smooth'});
-            }
-        }
-    }
+    //TO DO: click handlers to sections why and how
+//onClick={() => scrollToSection(why)}
+    // function handleScroll() {
+    //     const scrollToSection = () => {
+    //         const element = document.getElementsByClassName('how');
+    //         if (element) {
+    //             element.scrollIntoView({ behaviour: 'smooth'});
+    //         }
+    //     }
+    // }
 
     return(
         <header className='header'>
@@ -40,6 +40,3 @@ export default function Navbar_main() {
 );
 }
 
-//TO DO: click handlers to sections why and how
-//
-//onClick={() => scrollToSection(why)}

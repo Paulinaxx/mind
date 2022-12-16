@@ -134,15 +134,20 @@ export default function Add_subscription() {
             </div>
 
             <h1>Your subscriptions</h1>
-
+/
                 <div className="your_subs">
                     <ul className="all_subs">
                         {list.map((inputs) => (
                             // AND TO DO: button - edit
                             <li className="single-sub" key={inputs.id}>
-                            <span className="subText">
-                            {inputs.name} - {inputs.username} - {inputs.password} - {inputs.dates} - {inputs.sum}
-                            </span>
+
+                                {/*//should change to table*/}
+                                <span className="subText">{inputs.name}</span>
+                                <span className="subText">{inputs.username} </span>
+                                <span className="subText">{inputs.password}</span>
+                                <span className="subText">{inputs.dates}</span>
+                                <span className="subText">{inputs.sum}</span>
+
                                 {/*<button className="btn-sub"><i className="pi pi-file-edit"></i></button>*/}
                                 <button onClick={() => handleDelete(inputs.id)} className="btn-sub"><i
                                     className="pi pi-times"></i></button>
@@ -150,8 +155,8 @@ export default function Add_subscription() {
                         ))}
                     </ul>
                 </div>
-            {/*)}*/}
         </div>
     )
 }
+//- {inputs.username} - {inputs.password} - {inputs.dates} - {inputs.sum}
 

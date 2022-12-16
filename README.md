@@ -4,7 +4,7 @@
 App for managing Your subscriptions.
 
 
-[//]: # (## Live project )
+## Live project 
 
 [//]: # ()
 [//]: # (//link)
