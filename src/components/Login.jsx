@@ -5,37 +5,35 @@ import 'primeicons/primeicons.css';
 import { Button } from 'primereact/button'
 import Navbar from './Navbar_empty.jsx'
 import supabase from "../services/supabase.js";
+import { Toast } from 'primereact/toast';
 import { useNavigate } from "react-router-dom";
 
 
 export default function Login() {
 
     const navigate = useNavigate();
+
     const handleLogin = async (e) => {
         e.preventDefault();
 
+        const [email, password] = e.target.elements;
 
-        const [email, password ] = e.target.elements;
-
-
-
-        let { data: {user, error}} = await supabase.auth.signInWithPassword({
+        let {data: {user, error}} = await supabase.auth.signInWithPassword({
             email: email.value,
             password: password.value
         });
 
         if (!error) {
-            //errorToast.current.show({severity: 'error', summary: 'Error', detail: 'Error. Please try again.'})
+            // errorToast.current.show({severity: 'error', summary: 'Error', detail: 'Error. Please try again.'})
+            // return;
         }
         localStorage.setItem('userData', JSON.stringify(user));
         navigate('/Dashboard')
     }
-
     return(
         <div className="login">
             <Navbar />
             <div className="container">
-
               <div className="img_section">
             <img src={image} alt="hand" className="img-yay"/>
               </div>

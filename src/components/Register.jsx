@@ -3,7 +3,7 @@ import image from "../styles/img/yay.jpg";
 import { InputText } from "primereact/inputtext";
 import { Password } from "primereact/password";
 import { Button } from "primereact/button";
-import supabase from "../services/supabase";
+import supabase from "../services/supabase.js";
 import { useRef } from 'react';
 import { Toast } from 'primereact/toast';
 import { useNavigate } from "react-router-dom";
@@ -12,27 +12,29 @@ export default function Register() {
 
     const navigate = useNavigate();
 
-const errorToast = useRef(null);
+    const errorToast = useRef(null);
 
     const handleRegister = async (e) => {
         e.preventDefault();
 
         const [email, password, reenterpassword] = e.target.elements;
+
         if (password.value !== reenterpassword.value) {
             //throw new Error("Passwords must be the same");
             errorToast.current.show({severity: 'error', summary: 'Error', detail: 'Passwords must be the same.'});
+            //return;
         }
 
-        let { data: {user, error}} = await supabase.auth.signUp({
+        let {data: {user, error}} = await supabase.auth.signUp({
             email: email.value,
             password: password.value,
         });
 
         if (error) {
-            errorToast.current.show({severity: 'error', summary: 'Error', detail: 'Error. Please try again.'})
+            errorToast.current.show({severity: 'error', summary: 'Error', detail: 'Error. Please try again.'});
+          //  return;
         }
-
-        navigate('/Dashboard')
+        navigate('/Dashboard');
     }
 
 

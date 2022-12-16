@@ -13,8 +13,8 @@ export default function Main_welcome_section() {
                 />
             </div>
             <div className="welcome_section">
-                <h1>It's easy to manage Your subscriptions.</h1>
-            </div>
+                <h1>Yup. <br />It's easy to manage Your subscriptions.</h1>
+
                 <div className="big-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                         <defs>
@@ -51,7 +51,7 @@ export default function Main_welcome_section() {
                         </span>
                     </button>
                 </div>
-
+            </div>
             </div>
         </main>
     );

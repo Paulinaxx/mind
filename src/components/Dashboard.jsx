@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 
 
-export default function Main_Dashboard() {
+export default function Dashboard() {
 
     const [isLogged, setIsLogged] = useState(false);
     const navigate = useNavigate();

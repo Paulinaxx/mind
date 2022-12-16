@@ -2,33 +2,44 @@
 
 .container {
   .content {
-
     display: flex;
     justify-content: center;
     align-items: center;
+   // flex-direction: column;
 
     .img_section {
       max-width: 50%;
+     // width: 60%;
+     // height: 60%;
+      margin-left: 20px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
 
       img {
-        width: 50%;
+        width: 40%;
       }
 
       .chilling {
-        width: 70%;
-        height: 70%;
-        margin-left: 20px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
+        width: 60%;
+        height: 60%;
+        //margin-left: 20px;
+        //background-size: cover;
+        //background-repeat: no-repeat;
+        //background-position: 50% 50%;
       }
     }
 
     .welcome_section {
-      max-width: 50%;
-      display: flex;
-      position: center;
-      align-items: center;
+      // max-width: 50%;
+
+
+      .big-btn {
+      @include big-btn;
+        margin-top: 20px;
+        padding: 30px;
+        //text-align: center;
+     }
     }
 
     h1 {
@@ -36,9 +47,8 @@
       width: 70%;
       height: 70%;
     }
-
-    @include big-btn;
   }
+    @include big-btn;
 }
 
 

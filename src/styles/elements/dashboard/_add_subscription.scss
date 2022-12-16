@@ -1,15 +1,16 @@
 @import './src/styles/settings/_colors.scss';
 @import './src/styles/settings/_fonts.scss';
 
-.container{
-  .add_sub{
+.container {
+
+  .add_sub {
     //background-color: grey;
     //display: flex;
     //justify-content: center;
     //align-items: center;
     height: 80vh;
 
-    h1{
+    h1 {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -19,7 +20,8 @@
       //margin: 70px;
     }
   }
-  .form_content{
+
+  .form_content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +37,7 @@
         // border-color: green
       }
     }
+
     button {
       background-color: $black;
       color: $white;
@@ -44,16 +47,25 @@
       height: 40px;
     }
   }
+
+  h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-noto;
+  size: 5rem;
+  padding: 30px 30px;
+  }
+
   .icons {
     padding: 10px 10px;
   }
 
   .your_subs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   // display: flex;
+   // justify-content: center;
+   // align-items: center;
     text-align: center;
-
 
     ul {
       .btn-sub{

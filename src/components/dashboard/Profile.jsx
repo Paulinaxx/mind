@@ -22,7 +22,6 @@ export default function Profile() {
             localStorage.removeItem('userData');
             navigate('/Login')
         }
-
     }
 
     return(
